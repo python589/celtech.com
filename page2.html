@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn python and html</title>
+    <style>
+        body{
+        background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <u><h1>python</h1></u>
+    <p>python is a case sensitive language wich is used to write software of various kinds</p>
+    <h1>apps and software made in python</h1>
+    <p>instagram</p>
+    <br>
+    <p>youtube</p>
+    <br>
+     <p>whatsapp and etc</p>
+    <br>
+    <h3>python is interpreted with a thing called python interpreter</h3>
+    <br>
+    <h1>Basics of python</h1>
+    <br>
+    <p>'print' is used to print something ex : print("hello world")</p>
+    <h1>variables</h1>
+    <p>variables mean a place where we store something like  a is a variable and its value is 10 ex 
+        a=10
+    </p>
+      <p>Python is a high-level, interpreted programming language known for readable syntax and rapid development.</p>
+    <br>
+  <p>To run Python code you typically install Python from python.org or use a package manager, then run files with `python filename.py` or use an interactive REPL with `python` or `ipython`.</p>
+   <br>
+
+  <p>Python uses indentation (spaces or tabs) to mark blocks instead of braces; consistent indentation is required for correctness.</p>
+    <br>
+  <p>Comments start with `#` for single-line comments. Multi-line comments often use triple quotes `""" comment """` though those are actually string literals.</p>
+<br>
+  <p>Variables are assigned with `=` and have dynamic types: e.g., `x = 10`, `name = "Alice"`, `flag = True`.</p>
+<br>
+  <p>Common built-in numeric types: `int` (integers), `float` (floating-point numbers), and `complex` (complex numbers with real and imaginary parts).</p>
+<br>
+  <p>Strings are sequences of characters. You create them with single, double, or triple quotes: `'hi'`, `"hi"`, `'''multi-line'''`.</p>
+<br>
+  <p>String concatenation uses `+` and repetition uses `*`. Formatting can be done with f-strings: `f\"Hello {name}\"`, `.format(...)`, or `%` formatting (older).</p>
+<br>
+  <p>Boolean values are `True` and `False`. Comparison operators include `==`, `!=`, `<`, `<=`, `>`, `>=` and logic operators are `and`, `or`, and `not`.</p>
+<br>
+  <p>Collections: `list` is an ordered, mutable sequence: `[1, 2, 3]`. `tuple` is ordered but immutable: `(1, 2)`. `set` is an unordered collection of unique items: `{1, 2}`. `dict` stores key-value pairs: `{'a': 1, 'b': 2}`.</p>
+<br>
+  <p>Common list operations: indexing `lst[0]`, slicing `lst[1:3]`, append `lst.append(x)`, insert `lst.insert(i,x)`, remove `lst.remove(x)`, pop `lst.pop()`.</p>
+<br>
+  <p>Dictionary operations: access `d[key]`, safe get `d.get(key, default)`, add `d[key] = value`, iterate `for k, v in d.items()`.</p>
+<br>
+  <p>Control flow: `if`, `elif`, and `else` for conditional branching. Example: `if x > 0: print(\"positive\") elif x < 0: print(\"negative\") else: print(\"zero\")`.</p>
+<br>
+  <p>Loops: `for` iterates over iterable objects: `for item in iterable:`. `while` loops run while a condition is true: `while condition:`. Use `break` to exit and `continue` to skip to next iteration.</p>
+<br>
+  <p>Comprehensions provide concise ways to create lists, sets, and dicts: list comprehension example: `[x*x for x in range(10) if x%2==0]`.</p>
+<br>
+  <p>Functions are defined with `def`: `def add(a, b): return a + b`. Functions can have default arguments, keyword-only args, `*args` (variable positional) and `**kwargs` (variable keyword arguments).</p>
+<br>
+  <p>Docstrings are triple-quoted strings placed right after `def` or class to document usage: `def f(): \"\"\"This does X\"\"\"`.</p>
+<br>
+  <p>Scope and namespaces: variables defined inside a function are local; global variables live in the module scope. Use `global` or `nonlocal` rarely to modify outer variables.</p>
+<br>
+  <p>Modules are Python files (e.g., `mymodule.py`) that you import with `import mymodule` or `from mymodule import func`. The standard library includes many useful modules like `math`, `os`, `sys`, `datetime`, and `json`.</p>
+<br>
+  <p>Packages are directories with an `__init__.py` file that group modules; install third-party packages with `pip install package_name` into a virtual environment.</p>
+<br>
+  <p>Virtual environments isolate project dependencies. Create one with `python -m venv venv`, activate it, then `pip install ...` to keep dependencies local to the project.</p>
+<br>
+  <p>File I/O: open files with `with open('file.txt', 'r') as f:` to read or `with open('file.txt', 'w') as f:` to write, which ensures the file closes automatically.</p>
+<br>
+  <p>Exceptions handle runtime errors. Use `try`, `except`, `else`, and `finally`: `try: do() except ValueError as e: handle(e) finally: cleanup()`.</p>
+<br>
+  <p>Raising exceptions: use `raise ValueError(\"bad value\")` to signal an error. Create custom exceptions by subclassing `Exception`.</p>
+<br>
+  <p>Object-Oriented Programming: define classes with `class MyClass:`. Use `__init__(self, ...)` as constructor, instance methods receive `self`, and class methods use `@classmethod` and `@staticmethod` as needed.</p>
+<br>
+  <p>Special methods include `__str__`, `__repr__`, `__len__`, and operator overloads like `__add__` to customize behavior of your objects.</p>
+<br>
+  <p>Iterators and generators: any object with `__iter__` and `__next__` is an iterator. Use generators with `yield` to produce values lazily: `def gen(): yield 1`.</p>
+<br>
+  <p>Decorators wrap functions to modify behavior: `@decorator` above a function is equivalent to `function = decorator(function)`. Decorators are used for logging, caching, and authorization.</p>
+<br>
+  <p>Common built-ins to know: `len`, `range`, `enumerate`, `zip`, `map`, `filter`, `sorted`, `min`, `max`, `sum`, and `type`.</p>
+<br>
+  <p>Working with JSON: use `import json` with `json.dumps(obj)` to convert to JSON string and `json.loads(s)` to parse JSON back to Python objects.</p>
+<br>
+  <p>Concurrency basics: `threading` for threads, `multiprocessing` for processes, and `asyncio` for asynchronous I/O with `async` and `await` keywords; choose the right tool based on CPU vs I/O bound tasks.</p>
+<br>
+  <p>Testing: write unit tests with the `unittest` module or `pytest`. Tests help prevent regressions and make refactoring safer.</p>
+<br>
+  <p>Debugging: use print debugging, the `pdb` module, or IDE debuggers that support breakpoints and variable inspection to find issues.</p>
+<br>
+  <p>Type hints (annotations) improve readability and tooling support: `def greet(name: str) -> str: ...`. Use `mypy` or an editor to check types, but they are optional at runtime.</p>
+<br>
+  <p>Best practices: write readable code, follow PEP 8 style guidelines (naming, spacing), keep functions small, document with docstrings, and use version control like Git for projects.</p>
+<br>
+  <p>Packaging: to distribute code, create a `pyproject.toml` or `setup.cfg`/`setup.py` and publish to PyPI with tools like `twine` after building a wheel or sdist.</p>
+<br>
+  <p>Security notes: avoid executing untrusted code (e.g., `eval()` on untrusted input), validate inputs, and keep dependencies up to date to mitigate vulnerabilities.</p>
+<br>
+  <p>Resources to learn more: the official Python docs, many tutorials, and practicing by building small projects like scripts, web scrapers, tiny web apps, or command-line tools.</p>
+<br>
+  <p>Summary: start with basics—variables, control flow, functions, and collections—then practice modules, file I/O, exceptions, classes, and testing. Use virtual environments and read the standard library to become effective quickly.</p>
+</body>
+    </center>
+</body>
+</html>
